@@ -617,8 +617,6 @@
 
     /*----------- Contact -----------*/
 
-  });
-  $(window).on('load', function() {
     /*----------- Preloader -----------*/
 
     $('.preloader-icon').fadeOut(400);
