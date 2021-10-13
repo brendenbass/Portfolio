@@ -31,7 +31,8 @@
   <link id="color-scheme" rel="stylesheet" href="/css/colors/main-blue.css">
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="/css/custom.css">
-
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <META HTTP-EQUIV="Expires" CONTENT="-1">
 </head>
 
 <body>
@@ -571,23 +572,6 @@
   <script src="/js/main.js"></script>
   <!-- Custom JS (Add your custom JS scripts to this file)-->
   <script src="/js/custom.js"></script>
-  <script type='text/javascript'>
-
-    (function()
-    {
-      if( window.localStorage )
-      {
-        if( !localStorage.getItem('firstLoad') )
-        {
-          localStorage['firstLoad'] = true;
-          window.location.reload();
-        }  
-        else
-          localStorage.removeItem('firstLoad');
-      }
-    })();
-    
-    </script>
 </body>
 
 </html>
