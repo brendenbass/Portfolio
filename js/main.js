@@ -628,16 +628,18 @@
       var grid = $('.portfolio-area .portfolio-grid');
       var filters = $('.portfolio-area .filter-control li');
 
-      grid.isotope({
-        itemSelector: '.single-item',
-      });
-      filters.on('click', function() {
-        filters.removeClass('tab-active');
-        $(this).addClass('tab-active');
-        var selector = $(this).data('filter');
+      grid.imagesLoaded(function(){
         grid.isotope({
-          filter: selector,
-          transitionDuration: '.25s'
+          itemSelector: '.single-item',
+        });
+        filters.on('click', function() {
+          filters.removeClass('tab-active');
+          $(this).addClass('tab-active');
+          var selector = $(this).data('filter');
+          grid.isotope({
+            filter: selector,
+            transitionDuration: '.25s'
+          });
         });
       });
     }())
